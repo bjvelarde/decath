@@ -28,5 +28,4 @@ test('Per-Page spin button should change number', async () => {
 
 		expect(fifteenItems).toHaveLength(10);
 	});
-
 });
