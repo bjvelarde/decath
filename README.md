@@ -1,5 +1,4 @@
-# Getting Started with Create React App
-
+# List Decathlon Repositories with filtering and sorting
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
