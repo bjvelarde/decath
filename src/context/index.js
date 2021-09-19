@@ -11,23 +11,7 @@ const ACTIONS = {
   CHANGE_SORT_ORDER: 'change-sort-order',
 };
 
-// function* IdGenerator() {
-//   let index = 11;
-
-//   while (true) {
-//     yield index++;
-//   }
-// }
-
-// const generateId = IdGenerator();
-
-export const FILTER = {
-  ALL: 'all',
-  ACTIVE: 'active',
-  COMPLETED: 'completed'
-};
-
-const todoReducer = (state, action) => {
+const reposReducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.FETCH:
       return {...state, ...action.payload};
@@ -71,7 +55,7 @@ const changeSortOrder = dispatch => order => {
 }
 
 export const {Context, Provider} = createDataContext(
-  todoReducer,
+  reposReducer,
   {
     fetchRepos,
     filterRepos,
